@@ -1,3 +1,12 @@
+<template>
+  <div>
+    <div class="container">
+      <input class="text" type="text" v-model="term" @keyup.enter="exe" />
+      <input class="submit" type="submit" value="Search" @click="exe" />
+    </div>
+  </div>
+</template>
+
 <script>
 import axios from "axios";
 
